@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 bkg">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Viewport to work with any device width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Webpage title -->
+  <title>Truco</title>
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREAAAABEREhEQAAAAEREiIRAAAAAREiIiEAAAABESIiIQAAAAEREhIRAAAAAREREREAAAABEREREQAAAAERIRERAAAAARIiEREAAAABIiIhEQAAAAEiIiERAAAAARISEREAAAABEREREQAAAAAAAAAAAADgDwAAwAcAAMAHAADABwAAwAcAAMAHAADABwAAwAcAAMAHAADABwAAwAcAAMAHAADABwAAwAcAAMAHAADgDwAA"
+    rel="icon" type="image/x-icon" />
+  <!-- Bootstrap using CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Custom css -->
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="layout.css">
+  <!-- Include Animatelo -->
+  <script src="animatelo.min.js"></script>
+</head>
+<!-- Body begins -->
+
+<body class="d-flex h-100 text-center text-white" data-new-gr-c-s-check-loaded="14.1054.0" data-gr-ext-installed="">
+  <!-- Background image filter -->
+  <div class="d-flex h-auto w-100 mask bkg">
+    <!-- Cover-container for bootstrap -->
+    <div class="cover-container d-flex w-100 h-auto p-3 mx-auto flex-column">
+      <!-- Header begins -->
+      <header class="mb-auto">
+        <div>
+          <!-- Icon and Logo -->
+          <h1 class="float-md-start mb-0 logo"><img class="cardIcon" src="image/cards-icon.png" alt="DeckOfCards"> Truco
+          </h1>
+          <!-- Menu -->
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link text-white h5" id="newGame">New Game</a>
+            <a class="nav-link text-white h5" href="instruction.html">Instructions</a>
+            <a class="nav-link text-white h5" href="https://www.pagat.com/put/truco_br.html" target="_blank">History</a>
+          </nav>
+        </div>
+      </header>
+      <!-- Main section -->
+      <main class="px-3 d-flex flex-column justify-content-evenly">
+
+        <!-- PC Cards -->
+        <div class="d-flex flex-row justify-content-evenly align-content-center">
+          <div class="justify-content-start m-1 pcCard"><img class="img-fluid" id="pc0" src="image/cardback.jpg"
+              alt="PcCard1"></div>
+          <div class="justify-content-start m-1 pcCard"><img class="img-fluid" id="pc1" src="image/cardback.jpg"
+              alt="PcCard2"></div>
+          <div class="justify-content-start m-1 pcCard"><img class="img-fluid" id="pc2" src="image/cardback.jpg"
+              alt="PcCard3"></div>
+        </div>
+
+        <!-- Board -->
+        <div class="d-flex flex-column justify-content-start align-content-center bg-white border-1 board rounded-2">
+          <div class="d-flex flex-row justify-content-evenly">
+            <p class="text-black h6 align-self-start" id="placar">
+              Game Scoreboard
+            </p>
+            <p class="text-black h6 align-self-start" id="match">
+              Game Match
+            </p>
+            <p class="text-black h6 align-self-start" id="round">
+              Game Round
+            </p>
+          </div>
+
+          <button type="button" id="truco"
+            class="btn btn-primary btn-lg bg-danger btn-outline-danger text-white w-25 align-self-center">Truco</button>
+
+          <div class="d-flex flex-column justify-content-center" id="logTable">
+            <p class="text-black" id="gameLog">
+            </p>
+          </div>
+        </div>
+
+        <!-- User cards -->
+        <div class="d-flex flex-row justify-content-evenly align-content-center">
+          <div class="justify-content-start m-1 userCard"><img class="img-fluid" id="uc0" src="image/cardback.jpg"
+              alt="PcCard1"></div>
+          <div class="justify-content-start m-1 userCard"><img class="img-fluid" id="uc1" src="image/cardback.jpg"
+              alt="PcCard2"></div>
+          <div class="justify-content-start m-1 userCard"><img class="img-fluid" id="uc2" src="image/cardback.jpg"
+              alt="PcCard3"></div>
+        </div>
+
+      </main>
+      <!-- Footer -->
+      <footer class="mt-auto text-white-50">
+        <!-- Icon imported -->
+        <p class="m-auto">JavaScript project</p>
+        <p class="m-auto">April 2022</p>
+        <a href='https://www.flaticon.com/free-icon/playing-cards_4363317'> Icon by flaticon</a>
+      </footer>
+
+    </div>
+  </div>
+  </div>
+  <!-- main.js -->
+  <script type="text/javascript" src="main.js"></script>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>

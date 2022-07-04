@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- /*
+Author: Bruno Freitas
+IT Web Programming
+WEBD1000
+NSCC IT Campus
+Halifax - NS
+*/ -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Goals</title>
+        <link rel="stylesheet" href="portfolio_style.css">
+        <link rel="stylesheet" href="portfolio_layout.css">
+        <link rel="stylesheet" href="portfolio_reset.css">
+    </head>
+    <body>
+        <header>
+                <nav id="menu">
+                    <a id="navicon" href="#"><img src="img/tf_navicon.png" alt="" /></a>
+                    <ol id="row">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="goals.html">Goals</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ol>
+                </nav>
+        </header>
+        <article  id="myGoals">
+            <section id="mainGoal">
+                <p>
+                    My major goal is to create conditions to have a balanced life. 
+                </p>
+            </section>
+            <section id="professionalGoals">
+                <h2>Professional Goals</h2>
+                <ul>
+                    <li>Develop knowledge in consolidated programming languages</li>
+                    <li>Dive into new technologies</li>
+                    <li>Develop reliable code:
+                        <ul>
+                            <li>Final user oriented</li>
+                            <li>Easily maintainable</li>
+                            <li>High-Performance</li>
+                            <li>Align with market frameworks</li>
+                            <li>Modularized</li>
+                            <li>REST API focused</li>
+                        </ul>
+                    </li>
+                    <li>Have a consolidated knowledge in databases, queries, ETL, and query performance</li>
+                    <li>Meet market requirements for software development frameworks</li>
+                    <li>Get certificated</li>
+                </ul>
+            </section>
+            <section id="personalGoals">
+                <h2>Personal Goals</h2>
+                <ul>
+                    <li>Cook more</li>
+                    <li>Cycle more</li>
+                    <li>Learn photography</li>
+                    <li>Learn how to sail</li>
+                    <li>Travel to:
+                        <ul>
+                            <li>Peggys Cove</li>
+                            <li>Cape Breton</li>
+                            <li>Newfoundland</li>
+                            <li>Montreal</li>
+                        </ul>
+                    </li>
+                    <li>Learn French</li>
+                    <li>Learn how to ride a longboard</li>
+                </ul>
+            </section>
+            <section id="bannerContainer">
+                <img id="simpleBanner" src="img/GO-Development-Banner.jpg" alt=""> 
+                <script>
+                    //Initializing
+                    var i = 0;
+                    var images = []; //array
+                    var time = 5000; // time in millie seconds
+
+                    //images
+                    images[0] = "img/peggyscovebanner2.jpg";
+                    images[1] = "img/longboard.jpg";
+                    images[2] = "img/GO-Development-Banner.jpg";
+                    images[3] = "img/dockerbanner.png";
+                    
+                    //function
+                    function changeImage() {
+                        var el = document.getElementById('simpleBanner');
+                        el.src = images[i];
+                        if (i < images.length-1) {
+                            i++;
+                        } else {
+                            i = 0;
+                        }
+                        setTimeout('changeImage()', time);
+                    }
+                    window.onload = changeImage;
+                </script>
+                <!--Source: https://stackoverflow.com/questions/21496905/how-to-change-the-background-image-of-div-using-javascript-->
+            </section>
+        </article>
+        <footer id="fixedFooter">
+            <p>Bruno Freitas - W0448225</p>
+            <p>WEBD1000</p>
+            <p>IT Web Programming</p>
+            <p>NSCC - IT Campus</p>
+            <p>Halifax - Nova Scotia - Canada</p>
+        </footer>
+    </body>
+</html>

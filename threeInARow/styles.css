@@ -1,0 +1,24 @@
+#mainTable {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.cell {
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+}
+
+#checkPuzzleButton {
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+}
+
+#checkpuzzlecheckbox {
+    margin-left: 20px;
+}
+
+#hintPuzzleButton {
+    margin-left: 20px;
+}

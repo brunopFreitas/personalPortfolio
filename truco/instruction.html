@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 bkg">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Viewport to work with any device width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Webpage title -->
+  <title>Truco</title>
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREAAAABEREhEQAAAAEREiIRAAAAAREiIiEAAAABESIiIQAAAAEREhIRAAAAAREREREAAAABEREREQAAAAERIRERAAAAARIiEREAAAABIiIhEQAAAAEiIiERAAAAARISEREAAAABEREREQAAAAAAAAAAAADgDwAAwAcAAMAHAADABwAAwAcAAMAHAADABwAAwAcAAMAHAADABwAAwAcAAMAHAADABwAAwAcAAMAHAADgDwAA"
+    rel="icon" type="image/x-icon" />
+  <!-- Bootstrap using CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Custom css -->
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<!-- Body begins -->
+
+<body class="d-flex h-100 text-center text-white" data-new-gr-c-s-check-loaded="14.1054.0" data-gr-ext-installed="">
+  <!-- Background image filter -->
+  <div class="d-flex h-100 w-100 bkg">
+    <!-- Cover-container for bootstrap -->
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <!-- Header begins -->
+      <header class="mb-auto">
+        <div>
+          <!-- Icon and Logo -->
+          <h1 class="float-md-start mb-0 logo"><img class="cardIcon" src="image/cards-icon.png" alt="DeckOfCards"> Truco
+          </h1>
+          <!-- Menu -->
+          <nav class="nav nav-masthead justify-content-center float-md-start">
+            <a class="nav-link text-white h5" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link text-white h5" href="instruction.html">Instructions</a>
+            <a class="nav-link text-white h5" href="https://www.pagat.com/put/truco_br.html"
+              target="_blank">History</a>
+          </nav>
+        </div>
+      </header>
+      <!-- Main section -->
+      <main class="d-flex flex-row">
+
+        <!-- Instructions -->
+        <div class="p-1 instructions">
+          <h3 class="text-decoration-underline">Instructions</h3>
+          <h4 class="my-0">New Game</h4>
+          <p>A deck with 27 cards is created and shuffled.</p>
+          <p>You will receive 3 cards, the opponent will receive 3 cards as well.</p>
+          <p>The first person to achieve 12 points is the winner.</p>
+          <h4 class="my-0">Match</h4>
+          <p>A game can have at least 22 matches.</p>
+          <p>A match can have 3 rounds, hence, every match is a best of 3. The winner of a match is the person who wins
+            2 rounds.</p>
+          <p>Each match is worth 1 point.</p>
+          <h4 class="my-0">Round</h4>
+          <p>Your cards will be displayed at the bottom of the page, chose which card you want to play and click on it.
+          </p>
+          <p>Your opponent will make his move and play a card as well.</p>
+          <p>The owner of the strongest card is the winner of the round.</p>
+          <p>If a draw happens, both players win a point.</p>
+          <h4 class="my-0">Truco</h4>
+          <p>The red button labeled "Truco" increases the amount of points worth in the match.</p>
+          <p>You can click on it at anytime.</p>
+          <ul class="list-unstyled decision">Truco decision tree:
+            <li class="h5">Accept: You are now playing a 3 points match.</li>
+            <li class="h5">Run away: The match ends and the person who called "Truco" wins 1 point.</li>
+            <li class="h5">Raise: The match become a 6 points match.</li>
+          </div>
+          
+          <div class="p-1 table">
+            <table class="table text-white">
+              <h3 class="text-decoration-underline">Card Hierarchy</h3>
+              <thead>
+                <tr>
+                  <th scope="col">Card</th>
+                  <th scope="col">Hierarchy</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><img src="image/4C.png" alt="Zap"></th>
+                  <td>1</td>
+                  <td>The Strongest card in the game, also called Zap. This card is unique.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="image/7H.png" alt="SevenHeart"></th>
+                  <td>2</td>
+                  <td>Seven of Hearts. This card is unique.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="image/AS.png" alt="AceOfSpades"></th>
+                  <td>3</td>
+                  <td>Ace of Spades, also called Espadilha (it's pronounced espadilia) Disclaimer: All four ace suits are present in the deck!</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="image/7D.png" alt="SevenDiamond"></th>
+                  <td>4</td>
+                  <td>Seven of Diamonds, also called Golden Seven. This card is unique.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="image/3S.png" alt="Three"></th>
+                  <td>5</td>
+                  <td>Every three has the same hierarchy.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="image/2S.png" alt="Two"></th>
+                  <td>6</td>
+                  <td>Every two has the same hierarchy.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="image/AD.png" alt="Ace"></th>
+                  <td>7</td>
+                  <td>Ace of the following suits has the same hierarchy: Diamond, Club and Heart. Remember, the Ace of Spades is a strong card.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="image/KS.png" alt="King"></th>
+                  <td>8</td>
+                  <td>Every king has the same hierarchy.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="image/JS.png" alt="Jack"></th>
+                  <td>9</td>
+                  <td>Every Jack has the same hierarchy.</td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="image/QS.png" alt="Queen"></th>
+                  <td>10</td>
+                  <td>Every Queen has the same hierarchy. Weakest card in the game.</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="mt-auto text-white-50">
+        <!-- Icon imported -->
+        <p class="m-auto">JavaScript project</p>
+        <p class="m-auto">April 2022</p>
+        <a href='https://www.flaticon.com/free-icon/playing-cards_4363317'> Icon by flaticon</a>
+      </footer>
+
+    </div>
+  </div>
+  </div>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>

@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Oswald|Bree+Serif);
+/* Icon resize  */
+.cardIcon {
+  height: 11%;
+  width: 10%;
+}
+
+/* Text justify */
+.logo {
+  text-align: left;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+}
+
+.instructions p {
+  margin: 0;
+}
+
+.instructions h4 {
+  padding-top: 30px;
+}
+
+.instructions ul {
+  margin: 5px;
+}
+
+.instructions li {
+  padding: 5px;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.table h3 {
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bree Serif", Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  font-family: Merriweather, Helvetica, sans-serif;
+  color: white;
+}
+
+.decision {
+  padding: 10px;
+}
+
+.pcCard:not([disabled]):hover {
+  border-width: 2px;
+  cursor: not-allowed;
+  border: 1px solid black;
+}
+
+.userCard:not([disabled]):hover, .truco:not([disabled]):hover {
+  border-width: 2px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+#newGame {
+  cursor: pointer;
+}
+
+#gameLog {
+  margin-top: 15px;
+  height: 70px;
+  overflow-y: auto;
+}
+/*# sourceMappingURL=layout.css.map */

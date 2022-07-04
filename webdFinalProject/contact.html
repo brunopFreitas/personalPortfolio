@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- /*
+Author: Bruno Freitas
+IT Web Programming
+WEBD1000
+NSCC IT Campus
+Halifax - NS
+*/ -->
+<html id="contact" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="portfolio_style.css">
+        <link rel="stylesheet" href="portfolio_layout.css">
+        <link rel="stylesheet" href="portfolio_reset.css">
+    </head>
+    <body>
+        <header>
+            <nav id="menu">
+                <a id="navicon" href="#"><img src="img/tf_navicon.png" alt="" /></a>
+                <ol id="row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="goals.html">Goals</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ol>
+            </nav>
+        </header>
+        <article id="contactFormBox">
+            <section>
+                <div class="contactForm">
+                    <h2>Contact me</h2>
+                    <form method="POST" name="contact" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="Firstname" placeholder="Your name.." required="">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="Lastname" placeholder="Your last name.." required="">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" placeholder="Your email address.." required="">
+                        <label for="message">Message</label> 
+                        <textarea id="message" name="Subject" placeholder="Write something.." required=""></textarea>
+                        <button type="submit"> Submit </button>
+                    </form>
+                  </div>
+                  <!-- Source: https://medium.com/@egwuchinedu69/how-to-send-contact-form-data-to-an-email-address-without-server-side-language-adeec579c586 -->
+            </section>
+        </article>
+        <footer id="fixedFooter">
+            <p>Bruno Freitas - W0448225</p>
+            <p>WEBD1000</p>
+            <p>IT Web Programming</p>
+            <p>NSCC - IT Campus</p>
+            <p>Halifax - Nova Scotia - Canada</p>
+        </footer>
+    </body>
+</html>
