@@ -109,6 +109,10 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
+.message {
+  color: #000;
+}
+
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
@@ -3031,8 +3035,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #ffc800;
-  border-color: #ffc800;
+  background-color: #E6B400;
+  border-color: #E6B400;
 }
 .btn-primary:hover {
   color: #fff;
@@ -11579,6 +11583,13 @@ header.masthead .masthead-heading {
   border-right-width: 14px;
   border-left-width: 0;
 }
+.center {
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .timeline > li .timeline-image {
   position: absolute;
   z-index: 100;
@@ -11590,7 +11601,7 @@ header.masthead .masthead-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #ffc800;
+  background-color: white;
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
