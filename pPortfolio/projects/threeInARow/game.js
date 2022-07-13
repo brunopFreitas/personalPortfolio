@@ -1,5 +1,5 @@
 (function(){
-    //const urlSample = 'https://threeinarowpuzzle.herokuapp.com/sample'
+    const urlSample = 'https://threeinarowpuzzle.herokuapp.com/sample'
     const urlRandom = 'https://threeinarowpuzzle.herokuapp.com/random'
     let resultList = []
     let hint = 3
