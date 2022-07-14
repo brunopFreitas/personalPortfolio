@@ -22,3 +22,8 @@
 #hintPuzzleButton {
     margin-left: 20px;
 }
+
+body {
+    background: rgb(101,100,110);
+    background: linear-gradient(90deg, rgba(101,100,110,1) 0%, rgba(255,255,255,1) 50%, rgba(214,214,214,1) 100%);
+}

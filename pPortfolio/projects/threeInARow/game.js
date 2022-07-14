@@ -3,7 +3,7 @@
     const urlRandom = 'https://threeinarowpuzzle.herokuapp.com/random'
     let resultList = []
     let hint = 3
-    fetch(urlRandom)
+    fetch(urlSample)
         .then(data=>{return data.json()})
         .then(json=>{
             buildMeATable(json)
@@ -14,9 +14,10 @@
 
     const buildMeAHintButton = (json) => {
         const newButton = document.createElement('button')
+        const theDiv = document.querySelector('#action')
         newButton.id='hintPuzzleButton'
         newButton.innerText=`Click me for a hint`
-        append(document.body,newButton)
+        append(theDiv,newButton)
         addEventHint(newButton, json)
         }
 
@@ -75,14 +76,16 @@
     const buildMeACheckbox = (json) => {
         //Source of inspiration because I was struggling with labeling: https://www.geeksforgeeks.org/html-dom-input-checkbox-object/
         let newChekbox = document.createElement('input')
+        const theDiv = document.querySelector('#action')
         newChekbox.type = "checkbox";
         newChekbox.name = "checkPuzzle";
-        newChekbox.id = "checkpuzzlecheckbox";
+        newChekbox.id = "checkPuzzleCheckbox";
         let newLabel = document.createElement('label');
-        newLabel.htmlFor = "checkpuzzlecheckbox";
+        newLabel.htmlFor = "checkPuzzleCheckbox";
+        newLabel.id = "checkBoxLabel"
         append(newLabel,document.createTextNode('Check Incorrect Squares'))
-        append(document.body,newChekbox)
-        append(document.body,newLabel)
+        append(theDiv,newChekbox)
+        append(theDiv,newLabel)
         addEventCheckAccuracy(newChekbox, json)
         }
     
@@ -118,9 +121,10 @@
 
     const buildMeACheckResultButton = (json) => {
         const newButton = document.createElement('button')
+        const theDiv = document.querySelector('#action')
         newButton.id='checkPuzzleButton'
         newButton.innerText='Check Puzzle'
-        append(document.body,newButton)
+        append(theDiv,newButton)
         addEventCheckResult(newButton, json)
     }
 

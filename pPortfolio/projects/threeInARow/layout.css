@@ -1,0 +1,16 @@
+#checkBoxLabel {
+    margin-top: 7px;
+}
+#checkPuzzleButton, #hintPuzzleButton, #checkPuzzleCheckbox{
+    margin: 5px 5px 5px 5px;
+    display: flex;
+}
+
+#theGame, #action {
+    display: flex;
+    justify-content: center;
+}
+
+#mainTable {
+    border: 2px solid black;
+}
