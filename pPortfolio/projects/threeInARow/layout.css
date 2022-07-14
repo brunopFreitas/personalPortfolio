@@ -1,6 +1,14 @@
+@media only screen and (max-width: 640px) {
+    /* For mobile phones: */
+    #mainTable{
+        display: inline-flex;
+    }
+  }
+
 #checkBoxLabel {
     margin-top: 7px;
 }
+
 #checkPuzzleButton, #hintPuzzleButton, #checkPuzzleCheckbox{
     margin: 5px 5px 5px 5px;
     display: flex;
